@@ -22,19 +22,18 @@ window.SITE = {
        file: "media/film/<name>.mp4", poster: "media/poster/<name>.jpg"
      `note` is the small grey line under the title. */
   films: [
-    { vimeo: 1199107760, title: "Qatar Ministry of Sports", poster: "media/poster/ministry-of-sports.jpg" },
-    { file: "media/film/qiib-qatar-airways.mp4", poster: "media/poster/qiib-qatar-airways.jpg",
-      title: "QIIB × Qatar Airways", duration: 62 },
     { vimeo: 1199109325, title: "Al Jazeera Perfumes", poster: "media/poster/al-jazeera-perfumes.jpg" },
+    { vimeo: 1199107760, title: "Qatar Ministry of Sports", poster: "media/poster/ministry-of-sports.jpg" },
+    { vimeo: 1178205289, title: "Evil Lady Game", poster: "media/poster/evil-lady-game.jpg" },
     { file: "media/film/al-gharafa.mp4", poster: "media/poster/al-gharafa.jpg",
       title: "Al Gharafa SC", duration: 37 },
+    { file: "media/film/qiib-qatar-airways.mp4", poster: "media/poster/qiib-qatar-airways.jpg",
+      title: "QIIB × Qatar Airways", duration: 62 },
     { file: "media/film/jayo.mp4", poster: "media/poster/jayo.jpg",
       title: "JAYO", note: "Music video", duration: 171 },
     { vimeo: 1149620400, title: "American Sports Crib" },
-    { vimeo: 1178205289, title: "Evil Lady Game" },
     { vimeo: 1154638753, title: "JAIA — Egypt" },
     { vimeo: 1145838828, title: "Zuvera Cosmetics" },
-    { vimeo: 1145835408, title: "Qatar Desert Farm" },
     { vimeo: 1212539734, title: "Toyota Supra", note: "Car edit" },
     { vimeo: 1199109850, title: "Color grading" },
     { vimeo: 1145835334, title: "Egypt in One Minute" }
@@ -67,7 +66,8 @@ window.SITE = {
     1212539689, // AL JAZEERA 3
     1212539688, // AL JAZEERA 5 AC
     1212539729, // aljazeera F
-    1212540725  // PRET FRIENDLY V3
+    1212540725, // PRET FRIENDLY V3
+    1145835408  // qatar desert farm (Jay removed it, 2026-11-08)
   ],
 
   /* Instagram tiles: the picture is saved in media/ig/, the link opens the post. */
