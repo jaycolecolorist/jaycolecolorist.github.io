@@ -22,12 +22,12 @@ window.SITE = {
        file: "media/film/<name>.mp4", poster: "media/poster/<name>.jpg"
      `note` is the small grey line under the title. */
   films: [
-    { vimeo: 1199109325, title: "Al Jazeera Perfumes", poster: "media/poster/al-jazeera-perfumes.jpg" },
+    { vimeo: 1199109325, title: "Al Jazeera Perfumes", poster: "media/poster/al-jazeera-perfumes.jpg?v=12" },
     { vimeo: 1199107760, title: "Qatar Ministry of Sports", poster: "media/poster/ministry-of-sports.jpg" },
     { vimeo: 1178205289, title: "Evil Lady Game", poster: "media/poster/evil-lady-game.jpg" },
     { file: "media/film/al-gharafa.mp4", poster: "media/poster/al-gharafa.jpg",
       title: "Al Gharafa SC", duration: 37 },
-    { file: "media/film/qiib-qatar-airways.mp4", poster: "media/poster/qiib-qatar-airways.jpg",
+    { file: "media/film/qiib-qatar-airways.mp4", poster: "media/poster/qiib-qatar-airways.jpg?v=12",
       title: "QIIB × Qatar Airways", duration: 62 },
     { file: "media/film/jayo.mp4", poster: "media/poster/jayo.jpg",
       title: "JAYO", note: "Music video", duration: 171 },
