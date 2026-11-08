@@ -1,0 +1,59 @@
+/* Jay White — work. Plain page: name, contacts, videos. */
+
+@font-face {
+  font-family: "Newsreader";
+  src: url("../fonts/newsreader.woff2") format("woff2");
+  font-weight: 200 800; font-style: normal; font-display: swap;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: #ececec;
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+
+.top, main { max-width: 1400px; margin: 0 auto; padding: 0 clamp(14px, 3vw, 40px); }
+
+.top { padding-top: clamp(28px, 5vw, 56px); padding-bottom: clamp(24px, 4vw, 40px); }
+.top h1 { margin: 0; font-size: clamp(30px, 4vw, 44px); font-weight: 400; letter-spacing: -0.02em; line-height: 1.1; }
+.top p { margin: 6px 0 0; color: #9a9a9a; }
+.top .links { display: flex; flex-wrap: wrap; gap: 6px 20px; margin-top: 12px; }
+.top .links a { color: #ececec; text-decoration: none; border-bottom: 1px solid #444; }
+.top .links a:hover { border-bottom-color: #ececec; }
+
+.grid { display: grid; gap: clamp(14px, 2vw, 24px); }
+.grid--wide { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid--tall { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: clamp(14px, 2vw, 24px); padding-bottom: 56px; }
+
+.v { margin: 0; min-width: 0; }
+.v__frame {
+  position: relative; width: 100%; aspect-ratio: 16 / 9;
+  border-radius: 12px; overflow: hidden; background: #1a1a1a;
+}
+.grid--tall .v__frame { aspect-ratio: 9 / 16; }
+.v__frame > img, .v__frame > iframe, .v__frame > video {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0; object-fit: cover;
+}
+.v__frame > video { object-fit: contain; background: #000; }
+.v__start { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: none; cursor: pointer; }
+.v__start::after { /* play button */
+  content: ""; position: absolute; left: 50%; top: 50%; width: 58px; height: 58px; margin: -29px 0 0 -29px;
+  border-radius: 50%; background: rgba(0, 0, 0, 0.5) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 6.5v11l9-5.5z' fill='%23fff'/%3E%3C/svg%3E") center / 26px no-repeat;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.v__start:focus-visible { outline: 2px solid #fff; outline-offset: -2px; border-radius: 12px; }
+.v figcaption { margin-top: 8px; font-size: 15px; color: #b5b5b5; }
+
+@media (max-width: 900px) {
+  .grid--tall { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .grid--wide { grid-template-columns: 1fr; }
+}
